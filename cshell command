@@ -1,0 +1,11 @@
+alias fc 'find . -type "f" -name "*.c" | xargs grep -n';
+alias fh 'find . -type "f" -name "*.h"|xargs grep -n';
+alias fn 'find . -name ';
+
+alias fvh 'find . -type "f" -name "*.?vh" | xargs grep -n';
+alias fv  'find . -type "f" -name "*.?v"  | xargs grep -n';
+
+
+alias cdself 'cd /desktop/lala/'
+
+alias gitlog 'git log --pretty=oneline --graph --abbrev-commit'
