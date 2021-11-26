@@ -1,0 +1,32 @@
+git add <file name>
+git commit -m "track info"
+git status
+git diff <file name>
+git diff HEAD -- readme.txt
+git log --pretty=oneline --graph --abbrev-commit
+git reset --hard HEAD^  /   git reset --hard HEAD^^  /   git reset --hard HEAD~3   /   git reset --hard <commit>
+git reflog
+git checkout -- <file name>   /   git restore <file name>
+git reset HEAD <file name>   /   git restore  --stage <file name>
+git rm <file name>
+git remote add origin <web location>
+git clone <web location>
+git push -u origin master   /  git push <remote branch name> <local branch name>
+git remote -v
+git remote rm origin
+git checkout -b <branch name>  /  git switch -c <branch name>   /  git branch <branch name> + git switch <branch name>
+git checkout -b <branch name> <remote master name>/<remote branch name>
+git merge (--no-ff -m "track info") <branch name>
+git branch
+git branch -d <branch name>
+git stash
+git stash list
+git pop  = git stash apply stash@{0} + git stash drop stash@{0}
+git cherry-pick <commit>
+git tag <tag name> (<commit>)   /   git tag -a <tag name>  -m "track info" (<commit>)
+git tag
+git show <tagname>
+git tag -d <tagname>  (if delete remote tag, add: git push origin :refs/tags/<tag name>)
+git push origin <tagname>   /  git push origin --tags
+git push origin :refs/tags/v0.9
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
